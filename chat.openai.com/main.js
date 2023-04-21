@@ -13,10 +13,6 @@
 (function () {
   'use strict';
   GM_addStyle(`
-    .m-auto{
-      margin:unset !important;
-      max-width:unset !important;
-    }
   `);
 
 

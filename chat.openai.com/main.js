@@ -13,6 +13,12 @@
 (function () {
   'use strict';
   GM_addStyle(`
+   @media (min-width: 1280px){
+   .xl\:max-w-3xl {
+    max-width: 73rem !important;
+}
+   }
+
   `);
 
 
@@ -69,7 +75,7 @@
         .forEach((item, index) => {
           // 这是回答
           if (index % 2 === 1) {
-            console.log(item);
+
             ((item) => { addRightClick(item) })(item)
           }
         });

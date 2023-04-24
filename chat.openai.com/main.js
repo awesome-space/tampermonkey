@@ -46,7 +46,6 @@
           let imgDataUrl = canvas.toDataURL('image/png');
           let downloadLink = document.createElement('a');
           downloadLink.href = imgDataUrl;
-          // 下载的文件名，可以根据需要修改
           downloadLink.download = 'chatgpt.png';
           downloadLink.click();
         });

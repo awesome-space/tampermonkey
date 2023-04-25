@@ -41,7 +41,6 @@
       event.preventDefault();
       // 添加自定义菜单项点击事件监听
       customMenuItem.addEventListener('click', () => {
-        // 在这里可以添加自定义菜单项的点击事件处理逻辑
         dom && html2canvas(dom).then(function (canvas) {
           let imgDataUrl = canvas.toDataURL('image/png');
           let downloadLink = document.createElement('a');

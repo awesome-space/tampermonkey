@@ -39,7 +39,6 @@
       document.body.appendChild(customMenuItem);
       // 阻止默认的右键菜单弹出
       event.preventDefault();
-      // 添加自定义菜单项点击事件监听
       customMenuItem.addEventListener('click', () => {
         dom && html2canvas(dom).then(function (canvas) {
           let imgDataUrl = canvas.toDataURL('image/png');
